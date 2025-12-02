@@ -100,7 +100,7 @@ function draw() {
         collision(newHead, snake)
     ) {
         clearInterval(game);
-        alert('游戏结束! 得分: ' + score);
+        alert('over,points: ' + score);
         return;
     }
 
@@ -109,7 +109,7 @@ function draw() {
     // 显示分数
     ctx.fillStyle = "white";
     ctx.font = "20px Arial";
-    ctx.fillText("分数: " + score, 10, 20);
+    ctx.fillText("points: " + score, 10, 20);
 }
 
 const game = setInterval(draw, 100);
